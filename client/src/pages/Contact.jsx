@@ -1,0 +1,35 @@
+import React from 'react'
+import Layout from '../components/Layouts/Layout';
+import {BiSupport,BiPhoneCall,BiMailSend} from 'react-icons/bi';
+const Contact = () => {
+  return (
+    <Layout title="Contact Us">
+            <div className='row contactus'>    
+  <div className="col-md-6">
+    <img src='/images/contactus.jpeg' alt='contactus' style={{width:'100%'}} />
+
+  </div>
+<div className="col-md-4 ">
+<h1 className="bg-dark p-2 text-white text-center">
+    CONTACT US
+</h1>
+<p className="text-justify mt-2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero, dignissimos reiciendis quidem fugit, nulla iure numquam, quia sit eius expedita ipsam fugiat molestias sunt ex aspernatur eum! Ipsa, libero.
+</p>
+<p className="mt-3">
+    <BiMailSend />:www.help@commerceapp.com
+</p>
+<p className="mt-3">
+    <BiPhoneCall/>012-3456789
+</p>
+<p className="mt-3">
+    <BiSupport />:1800-0000-0000(toll free)
+</p>
+</div>
+ </div>
+    </Layout>
+
+  )
+}
+
+export default Contact;
