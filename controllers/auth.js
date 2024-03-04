@@ -2,7 +2,7 @@ const { hashPassword, comparePassword } = require("../helper/auth");
 const User = require("../models/user");
 const Order = require("../models/order");
 const jwt = require("jsonwebtoken");
-const Product=require("../models/product");
+
 
 const registerController = async (req, res) => {
   try {
@@ -20,7 +20,7 @@ const registerController = async (req, res) => {
     }
 
     const hashedPassword = await hashPassword(password);
-    const newUser = await new User({
+    const newUser =  new User({
       name,
       email,
       password: hashedPassword,
@@ -101,38 +101,6 @@ const testController = (req, res) => {
   return res.send({ message: "protected route", success: true });
 };
 
-//forget Password
-
-const forgetPasswordController = async (req, res) => {
-  try {
-    const { email, answer, newPassword } = req.body;
-    if (!email || !answer || !newPassword) {
-      return res
-        .status(400)
-        .send({ message: "All Fileds are required", success: false });
-    }
-    var user = await User.findOne({ email, password });
-    if (!user) {
-      return res.status(404).send({
-        message: "Invalid Credentials",
-        success: false,
-      });
-    }
-    const hashed = await hashPassword(newPassword);
-    await User.findByIdAndUpdate(user._id, { password: hashed });
-    return res.status(200).send({
-      message: "Password Reset Successfully",
-      success: true,
-    });
-  } catch (error) {
-    console.log(error);
-    return res.status(500).send({
-      message: "Something Went Wrong!",
-      success: false,
-      error,
-    });
-  }
-};
 
 const updateProfile = async (req, res) => {
   try {
@@ -188,7 +156,7 @@ const getOrderController = async (req, res) => {
 module.exports = {
   registerController,
   LoginController,
-  forgetPasswordController,
+
   testController,
   updateProfile,
   getOrderController,

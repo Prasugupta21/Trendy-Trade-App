@@ -1,6 +1,6 @@
 const express=require('express');
 const router=express.Router();
-const {registerController,LoginController,testController,forgetPasswordController, updateProfile, getOrderController} =require('../controllers/auth');
+const {registerController,LoginController,testController, updateProfile, getOrderController} =require('../controllers/auth');
 const{requireSignIn,isAdmin}=require('../middlewares/auth')
 router.post('/register',registerController);
 router.post('/login',LoginController);
@@ -17,7 +17,6 @@ router.get('/admin-auth',requireSignIn,isAdmin,(req,res)=>{
 //update profile
 router.put('/profile',requireSignIn,updateProfile);
 
-router.post('/forget-password',forgetPasswordController);
 
 //orders
 router.get('/orders',requireSignIn,getOrderController);

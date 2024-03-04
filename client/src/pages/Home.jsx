@@ -89,7 +89,7 @@ loadMore();
         src="/images/banner.png"
         className="banner-img"
         alt="bannerimage"
-        width={"100%"}
+       width={"100%"}
       />
    <div className=" container-fluid row mt-3">
    <div className="col-md-3">
@@ -124,11 +124,11 @@ loadMore();
         products?.map((product)=>(
          
 
-<div className="card m-2 " style={{width: "18rem"} }>
-  <img src={`/api/v1/product/product-photo/${product._id}`} className="card-img-top" alt={product.name}/>
+<div className="card m-2" style={{width: "19rem"} }>
+  <img src={`/api/v1/product/product-photo/${product._id}`} className="card-img-top" height={'260.4px'}  alt={product.name}/>
   <div className="card-body text-center">
     <h5 className="card-title">{product.name}</h5>
-    <p className="card-text" style={{color:'#3abc3a',fontWeight:'bold'}}>Price${product.price}</p>
+    <p className="card-text" style={{color:'#3abc3a',fontWeight:'bold'}}>Price: ${product.price}</p>
 
     <p className="card-text">{product.description.substring(0,30)}...</p>
     <button  className="btn btn-primary ms-1" onClick={()=>navigate(`/product/${product.slug}`)}>More Details</button>

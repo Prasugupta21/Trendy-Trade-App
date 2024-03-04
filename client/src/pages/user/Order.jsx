@@ -33,13 +33,12 @@ export const Order = () => {
 
 
           <div className="col-md-9">
-            <h1 className="text-center">All Orders</h1>
+           
        
 <div className="text-center">
-<h1 >Your Order is done Successfully</h1>
+<h1 >Thank you for your Order</h1>
 
-<h3>You have ordered {orders[(orders.length)-1]?.products?.length}  items !</h3>
-
+{/* <h3>You have ordered {orders[(orders.length)-1]?.products?.length} Products</h3> */}
 </div>
 
 

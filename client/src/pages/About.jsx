@@ -15,12 +15,7 @@ const About = () => {
         </div>
         <div className="col-md-4">
           <p className="text-justify mt-2">
-            Lornpmem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            officiis obcaecati esse tempore unde ratione, eveniet mollitia,
-            perferendis eius temporibus dicta blanditiis doloremque explicabo
-            quasi sunt vero optio cum aperiam vel consectetur! Laborum enim
-            accusantium atque, excepturi sapiente amet! Tenetur ducimus aut
-            commodi illum quidem neque tempora nam.
+          Our passion lies in [describe your niche or industry]. Whether it’s fashion, home decor, gadgets, or wellness products, we curate a collection that reflects our commitment to quality, style, and functionality. We’re not just selling products; we’re delivering solutions that enhance your life.
           </p>
         </div>
       </div>

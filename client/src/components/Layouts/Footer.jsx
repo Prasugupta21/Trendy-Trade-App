@@ -5,11 +5,13 @@ const Footer = () => {
     <div className='footer'>
 
 <h1 className="text-center">
-    All Right Reserved © Technifoyt
+    All Right Reserved © Prasu Gupta
 </h1>
 <p className="text-center mt-3">
-<Link to='/about' >About</Link>
+<Link to='/about' >About </Link>
+<span>|</span>
 <Link to='/policy' >Privacy Policy </Link>
+<span>|</span>
 <Link to='/contact' >Contact</Link>
 </p>
     </div>

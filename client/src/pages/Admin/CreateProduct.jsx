@@ -79,7 +79,7 @@ const CreateProduct = () => {
      <AdminMenu/>
      </div>
 <div className="col-md-9">
-<h1>   Creat Product   </h1>
+<h1 style={{marginLeft:'-10rem'}}>  Create Product   </h1>
 <div className="m-1 w-75">
  
 
@@ -97,16 +97,16 @@ const CreateProduct = () => {
     )}
   </div>
   <div className="mb-3">
-<input type="text" value={name} placeholder='write a name ' className='form-control' onChange={(e)=>setName(e.target.value)} />
+<input type="text" value={name} placeholder='Product Name ' className='form-control' onChange={(e)=>setName(e.target.value)} />
   </div>
   <div className="mb-3">
-<input type="Number" value={price} placeholder='write a price ' className='form-control' onChange={(e)=>setPrice(e.target.value)} />
+<input type="Number" value={price} placeholder='Product Price ' className='form-control' onChange={(e)=>setPrice(e.target.value)} />
   </div>
   <div className="mb-3">
-<textarea type="text" value={description} placeholder='write a Description ' className='form-control' onChange={(e)=>setDescription(e.target.value)} > </textarea>
+<textarea type="text" value={description} placeholder='Product Description ' className='form-control' onChange={(e)=>setDescription(e.target.value)} > </textarea>
   </div>
   <div className="mb-3">
-<input type="Number" value={quantity} placeholder='write a quantity ' className='form-control' onChange={(e)=>setQuantity(e.target.value)} />
+<input type="Number" value={quantity} placeholder='Quantity ' className='form-control' onChange={(e)=>setQuantity(e.target.value)} />
   </div>
   <div className="mb-3">
     <Select bordered={false} placeholder="Select Shipping" size='large' showSearch className='form-select mb-3' onChange={(value)=>{

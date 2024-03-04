@@ -16,16 +16,16 @@ const AdminDashboard = () => {
       <div className="card w-75 p-3">
       <h3>
 
- Admin-Name:{authData?.user?.name}
+ Name:{authData?.user?.name}
         </h3>
       <h3>
 
- Admin-Email:{authData?.user?.email}
+ Email:{authData?.user?.email}
         </h3>
         
       <h3>
 
- Admin-Contact:{authData?.user?.phone}
+Contact:{authData?.user?.phone}
         </h3>
         
         </div>

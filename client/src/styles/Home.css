@@ -1,5 +1,6 @@
 .banner-img {
   margin-top: 60px;
+ 
 }
 
 .home-page h1 {
@@ -13,7 +14,7 @@
 }
 .home-page .card {
   background-color: rgba(128, 128, 128, 0.097);
-  width: 18rem;
+  width: 19rem;
 }
 .home-page .card-name-price {
   display: flex;
@@ -38,12 +39,16 @@
   color: rgb(90, 89, 89);
 }
 
-.home-page .card img:hover {
+.home-page, .card img:hover {
   transform: scale(0.9);
 }
 
+
 .home-page .card-img-top {
   height: 300px !important;
+}
+.card, .card-img-top:hover{
+  transform:scale(1.5);
 }
 /* ==================
 filters

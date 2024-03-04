@@ -267,7 +267,7 @@ const searchProduct=async(req,res)=>{
             {description:{$regex:keyword,$options:'i'}}
         ]
       }).select('-photo');
-console.log(result);
+
       return res.status(200).send({
         success:true,
         result
