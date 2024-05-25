@@ -5,9 +5,12 @@ import { toast } from 'react-hot-toast';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 
+
+
 import { Select } from 'antd';
 const  {Option} = Select;
 const UpdateProduct = () => {
+ 
   const navigate=useNavigate();
   const [category,setCategory]=useState([]);
 //   const [singleCategory,setSingleCategory]=useState('');
